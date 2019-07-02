@@ -16,7 +16,7 @@ const defaultOptions: Options = {
 
 export function sanitize(str: string, options: Partial<Options> = {}) {
   const opts = { ...defaultOptions, ...options };
-  const chars = str.split('');
+  const chars = str.toUpperCase().split('');
 
   const result: string[] = [];
 
